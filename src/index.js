@@ -14,7 +14,7 @@ const routing = (
     <div className="app__wrapper">
       <Nav />
       <Switch>
-        <Route exact path="/" component={Home} />
+        <Route path="/" component={Home} />
         <Route path="/aboutme" component={AboutMe} />
       </Switch>
       <Footer />
