@@ -146,6 +146,7 @@ h1 {
 
 .nav__item {
   margin: 1em 4em 1em 0;
+  cursor: pointer;
 }
 
 .nav__mpLogo {
