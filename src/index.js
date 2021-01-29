@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import Home from './views/Home'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
@@ -13,8 +12,7 @@ const routing = (
     <div className="app__wrapper">
       <Nav />
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route path="/home" component={Home} />
+        <Route exact path="/" component={Home} />
       </Switch>
       <Footer />
       {/* <Route exact path="/" component={App} />

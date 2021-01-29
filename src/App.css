@@ -9,11 +9,65 @@ html {
   --color-accent: #c96f53;
   --font-family: 'Mukta', sans-serif;
   --gutter: 16px;
-  --side-page-padding: 5em;
+  --side-page-padding: 4rem;
+  font-size: 62.5%;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    --side-page-padding: 2rem;
+  }
+
+  .app__wrapper .nav__wrapper {
+    display: none;
+  }
+
+  .app__wrapper .nav__hamburgerWrapper {
+    display: block;
+  }
+
+  .app__wrapper .nav__hamburgerClosedWrapper {
+    display: flex;
+  }
+
+  .app__wrapper .home__headerContent {
+    flex-direction: column;
+  }
+
+  .app__wrapper .home__titleSection {
+    width: 100%;
+  }
+
+  .app__wrapper .home__infoSection {
+    width: 100%;
+  }
+}
+
+.nav__hamburgerWrapper {
+  width: 100%;
+  display: none;
+}
+
+.nav__hamburgerClosedWrapper {
+  display: none;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.nav__hamburgerNavIcon {
+  margin: 0 2rem;
+  font-size: 2rem;
+}
+
+.nav__hamburgerNavLogo {
+  width: 10%;
+  margin: 0 2rem;
 }
 
 h1 {
-  font-size: 4em;
+  font-size: 4rem;
   letter-spacing: .1em;
   margin: .3em 0 0 0;
   display: block;
@@ -22,6 +76,7 @@ h1 {
 .app__wrapper {
   font-family: var(--font-family);
   background: var(--color-background);
+  font-size: 2rem;
 }
 
 .nav__wrapper {
@@ -74,6 +129,7 @@ h1 {
   padding: 1em var(--side-page-padding) 2em var(--side-page-padding);
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .home__infoSection {
@@ -90,7 +146,7 @@ h1 {
 }
 
 .home__careerDesc {
-  font-size: 14px;
+  font-size: 1.6rem;
 }
 
 .home__uxWorkWrapper {
@@ -105,6 +161,10 @@ h1 {
   display: flex;
   background: #f2f2f2;
   justify-content: space-between;
+}
+
+.home__caseStudy.home__rightAlignedCaseStudy {
+  flex-direction: row-reverse;
 }
 
 .home_caseStudyPhoto {
