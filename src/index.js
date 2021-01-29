@@ -2,21 +2,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Home from './views/Home'
+import AboutMe from './views/AboutMe'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
-import { Route, Switch, HashRouter as Router } from 'react-router-dom'
+import { Route, Switch, Router } from 'react-router-dom'
 import reportWebVitals from './reportWebVitals';
+import history from './history';
 
 const routing = (
-  <Router>
+  <Router history={history}>
     <div className="app__wrapper">
       <Nav />
       <Switch>
         <Route exact path="/" component={Home} />
+        <Route path="/aboutme" component={AboutMe} />
       </Switch>
       <Footer />
-      {/* <Route exact path="/" component={App} />
-      <Route path="/chooseteams" component={ChooseTeams} /> */}
     </div>
   </Router>
 )

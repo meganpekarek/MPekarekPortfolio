@@ -3,6 +3,7 @@ import React from 'react'
 import MPLogo from '../images/MPLogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons'
+import history from "../history";
 
 class Nav extends React.Component {
   constructor(props) {
@@ -18,14 +19,19 @@ class Nav extends React.Component {
     })
   }
 
+  goToRoute(path) {
+    console.log(history);
+    history.push(path);
+  }
+
   render() {
     const { menuOpen } = this.state;
     return (
       <React.Fragment>
         <section className="nav__wrapper">
           <nav className="nav__itemsWrapper">
-            <div className="nav__item">Home</div>
-            <div className="nav__item">About Me</div>
+            <div className="nav__item" onClick={() => this.goToRoute('/')}>Home</div>
+            <div className="nav__item" onClick={() => this.goToRoute('/aboutme')}>About Me</div>
             <div className="nav__item">Resume</div>
             <div className="nav__item">LinkedIn</div>
           </nav>
@@ -42,8 +48,8 @@ class Nav extends React.Component {
               <FontAwesomeIcon className="nav__hamburgerNavIcon" icon={faTimes}  onClick={() => this.toggleMenu(false)} />
             </div>
             <nav className="nav__hamburgerItemsWrapper">
-              <div className="nav__hamburgerItem">Home</div>
-              <div className="nav__hamburgerItem">About Me</div>
+              <div className="nav__hamburgerItem" onClick={() => this.goToRoute('/')}>Home</div>
+              <div className="nav__hamburgerItem" onClick={() => this.goToRoute('/aboutme')}>About Me</div>
               <div className="nav__hamburgerItem">Resume</div>
               <div className="nav__hamburgerItem">LinkedIn</div>
             </nav>

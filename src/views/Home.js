@@ -16,10 +16,6 @@ class Home extends React.Component {
 
   render() {
 
-    // const CaseStudies = () => (
-    //     <div>case</div>
-    // );
-
     return (
         <React.Fragment>
             <section className="home__headerContent">
