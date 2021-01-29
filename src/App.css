@@ -302,8 +302,13 @@ h1 {
   margin: 1rem;
   height: 4rem;
   background: var(--color-accent);
+  animation: widthExpand 2s ease forwards;
 }
 
+@keyframes widthExpand {
+  from { max-width: 0;}
+  to { max-width: 100%;}
+}
 
 .skillsGraph__barXD {
   width: 65%;
