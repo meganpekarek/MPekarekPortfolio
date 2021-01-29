@@ -38,12 +38,12 @@ class Nav extends React.Component {
             <div className="nav__item">LinkedIn</div>
           </nav>
           <div className="nav__logoWrapper">
-            <img className="nav__mpLogo" src={MPLogo} />
+            <img className="nav__mpLogo" src={MPLogo} alt="desktop-logo" />
           </div>
         </section>
         <section className="nav__hamburgerClosedWrapper">
           <FontAwesomeIcon className="nav__hamburgerNavIcon" icon={faBars} onClick={() => this.toggleMenu(true)} />
-          <img className="nav__hamburgerNavLogo" src={MPLogo} />
+          <img className="nav__hamburgerNavLogo" src={MPLogo} alt="mobile-logo" />
         </section>
         <section className={"nav__hamburgerOpenWrapper" + (menuOpen ? " openNav" : "")}>
             <div className="nav__hamburgerOpenTopWrapper">

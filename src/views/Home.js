@@ -3,16 +3,9 @@ import React from 'react'
 import NSACoverPhoto from '../images/NSACoverPhoto.png'
 import SheCanicCoverPhoto from '../images/SheCanicCoverPhoto.png'
 import CGCoverPhoto from '../images/CGCoverPhoto.png'
-import SkillsGraph from '../images/SkillsGraph.png'
-import SkillsChart from '../images/SkillsChart.png'
 import CaseStudy from '../components/CaseStudy'
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-// import { faRandom, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 class Home extends React.Component {
-  constructor(props) {
-    super(props);
-  }
 
   render() {
 
@@ -46,13 +39,6 @@ class Home extends React.Component {
                     <CaseStudy title="NSA Website Redesign Prototype" coverPhoto={NSACoverPhoto} />
                 </div>
             </section>
-            {/* <section className="home__skillsWrapper">
-                <h3>My Skills</h3>
-                <div className="home__skillsChartWrapper">
-                    <img className="home__skillsChart" src={SkillsChart} />
-                </div>
-                <img className="home__skillsGraph" src={SkillsGraph} />
-            </section> */}
         </React.Fragment>
     );
   }
