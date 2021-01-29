@@ -33,26 +33,21 @@ class Nav extends React.Component {
             <img className="nav__mpLogo" src={MPLogo} />
           </div>
         </section>
-        {!menuOpen && (
-          <section className="nav__hamburgerClosedWrapper">
-            <FontAwesomeIcon className="nav__hamburgerNavIcon" icon={faBars} onClick={() => this.toggleMenu(true)} />
-            <img className="nav__hamburgerNavLogo" src={MPLogo} />
-          </section>
-        )}
-        {menuOpen && (
-          <section className="nav__hamburgerWrapper">
-              <div className="nav__hamburgerOpenTopWrapper">
-                <FontAwesomeIcon icon={faTimes} />
-                <img className="nav__hamburgerMpLogo" src={MPLogo} onClick={() => this.toggleMenu(false)} />
-              </div>
-              <nav className="nav__hamburgerItemsWrapper">
-                <div className="nav__hamburgerItem">Home</div>
-                <div className="nav__hamburgerItem">About Me</div>
-                <div className="nav__hamburgerItem">Resume</div>
-                <div className="nav__hamburgerItem">LinkedIn</div>
-              </nav>
-          </section>
-        )}
+        <section className="nav__hamburgerClosedWrapper">
+          <FontAwesomeIcon className="nav__hamburgerNavIcon" icon={faBars} onClick={() => this.toggleMenu(true)} />
+          <img className="nav__hamburgerNavLogo" src={MPLogo} />
+        </section>
+        <section className={"nav__hamburgerOpenWrapper" + (menuOpen ? " openNav" : "")}>
+            <div className="nav__hamburgerOpenTopWrapper">
+              <FontAwesomeIcon className="nav__hamburgerNavIcon" icon={faTimes}  onClick={() => this.toggleMenu(false)} />
+            </div>
+            <nav className="nav__hamburgerItemsWrapper">
+              <div className="nav__hamburgerItem">Home</div>
+              <div className="nav__hamburgerItem">About Me</div>
+              <div className="nav__hamburgerItem">Resume</div>
+              <div className="nav__hamburgerItem">LinkedIn</div>
+            </nav>
+        </section>
     </React.Fragment>
     )
   }

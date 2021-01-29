@@ -70,8 +70,41 @@ html {
 }
 
 .nav__hamburgerNavLogo {
-  width: 10%;
+  width: 3rem;
   margin: 0 2rem;
+}
+
+.nav__hamburgerOpenWrapper {
+  position: fixed;
+  background: white;
+  top: 0;
+  width: 70%;
+  left: 0;
+  bottom: 0;
+  transform: translate(-100%, 0);
+  transition: transform .3s ease-in;
+}
+
+.nav__hamburgerOpenWrapper.openNav {
+  transform: translate(0, 0);
+}
+
+.nav__hamburgerOpenTopWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.nav__hamburgerItemsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 4rem 2rem;
+  height: 100%;
+}
+
+.nav__hamburgerItem {
+  margin: 2rem 0;
 }
 
 h1 {
