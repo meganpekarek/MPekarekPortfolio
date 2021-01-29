@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/MPekarekPortfolio/static/css/main.a3c0efd7.chunk.css",
-    "main.js": "/MPekarekPortfolio/static/js/main.c131dfad.chunk.js",
-    "main.js.map": "/MPekarekPortfolio/static/js/main.c131dfad.chunk.js.map",
+    "main.js": "/MPekarekPortfolio/static/js/main.fb0e8561.chunk.js",
+    "main.js.map": "/MPekarekPortfolio/static/js/main.fb0e8561.chunk.js.map",
     "runtime-main.js": "/MPekarekPortfolio/static/js/runtime-main.07c56d53.js",
     "runtime-main.js.map": "/MPekarekPortfolio/static/js/runtime-main.07c56d53.js.map",
     "static/js/2.f9d93520.chunk.js": "/MPekarekPortfolio/static/js/2.f9d93520.chunk.js",
@@ -22,6 +22,6 @@
     "static/js/runtime-main.07c56d53.js",
     "static/js/2.f9d93520.chunk.js",
     "static/css/main.a3c0efd7.chunk.css",
-    "static/js/main.c131dfad.chunk.js"
+    "static/js/main.fb0e8561.chunk.js"
   ]
 }
