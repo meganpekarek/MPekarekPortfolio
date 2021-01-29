@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import App from './App'
 import Home from './views/Home'
 import AboutMe from './views/AboutMe'
 import Nav from './components/Nav'
@@ -14,7 +15,8 @@ const routing = (
     <div className="app__wrapper">
       <Nav />
       <Switch>
-        <Route path="/" component={Home} />
+        <Route exact path="/" component={App} />
+        <Route path="/home" component={Home} />
         <Route path="/aboutme" component={AboutMe} />
       </Switch>
       <Footer />

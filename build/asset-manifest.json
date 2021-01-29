@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/MPekarekPortfolio/static/css/main.a3c0efd7.chunk.css",
-    "main.js": "/MPekarekPortfolio/static/js/main.fb0e8561.chunk.js",
-    "main.js.map": "/MPekarekPortfolio/static/js/main.fb0e8561.chunk.js.map",
+    "main.css": "/MPekarekPortfolio/static/css/main.0c5d5971.chunk.css",
+    "main.js": "/MPekarekPortfolio/static/js/main.d83680f9.chunk.js",
+    "main.js.map": "/MPekarekPortfolio/static/js/main.d83680f9.chunk.js.map",
     "runtime-main.js": "/MPekarekPortfolio/static/js/runtime-main.07c56d53.js",
     "runtime-main.js.map": "/MPekarekPortfolio/static/js/runtime-main.07c56d53.js.map",
-    "static/js/2.f9d93520.chunk.js": "/MPekarekPortfolio/static/js/2.f9d93520.chunk.js",
-    "static/js/2.f9d93520.chunk.js.map": "/MPekarekPortfolio/static/js/2.f9d93520.chunk.js.map",
+    "static/js/2.05210708.chunk.js": "/MPekarekPortfolio/static/js/2.05210708.chunk.js",
+    "static/js/2.05210708.chunk.js.map": "/MPekarekPortfolio/static/js/2.05210708.chunk.js.map",
     "static/js/3.90ab326a.chunk.js": "/MPekarekPortfolio/static/js/3.90ab326a.chunk.js",
     "static/js/3.90ab326a.chunk.js.map": "/MPekarekPortfolio/static/js/3.90ab326a.chunk.js.map",
     "index.html": "/MPekarekPortfolio/index.html",
-    "static/css/main.a3c0efd7.chunk.css.map": "/MPekarekPortfolio/static/css/main.a3c0efd7.chunk.css.map",
-    "static/js/2.f9d93520.chunk.js.LICENSE.txt": "/MPekarekPortfolio/static/js/2.f9d93520.chunk.js.LICENSE.txt",
+    "static/css/main.0c5d5971.chunk.css.map": "/MPekarekPortfolio/static/css/main.0c5d5971.chunk.css.map",
+    "static/js/2.05210708.chunk.js.LICENSE.txt": "/MPekarekPortfolio/static/js/2.05210708.chunk.js.LICENSE.txt",
     "static/media/CGCoverPhoto.4247ff05.png": "/MPekarekPortfolio/static/media/CGCoverPhoto.4247ff05.png",
     "static/media/NSACoverPhoto.e448e7e8.png": "/MPekarekPortfolio/static/media/NSACoverPhoto.e448e7e8.png",
     "static/media/SheCanicCoverPhoto.22a3e44d.png": "/MPekarekPortfolio/static/media/SheCanicCoverPhoto.22a3e44d.png",
     "static/media/SkillsChart.309e99cb.png": "/MPekarekPortfolio/static/media/SkillsChart.309e99cb.png",
-    "static/media/SkillsGraph.e31e2487.png": "/MPekarekPortfolio/static/media/SkillsGraph.e31e2487.png"
+    "static/media/SkillsGraph.e31e2487.png": "/MPekarekPortfolio/static/media/SkillsGraph.e31e2487.png",
+    "static/media/logo.6ce24c58.svg": "/MPekarekPortfolio/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.07c56d53.js",
-    "static/js/2.f9d93520.chunk.js",
-    "static/css/main.a3c0efd7.chunk.css",
-    "static/js/main.fb0e8561.chunk.js"
+    "static/js/2.05210708.chunk.js",
+    "static/css/main.0c5d5971.chunk.css",
+    "static/js/main.d83680f9.chunk.js"
   ]
 }

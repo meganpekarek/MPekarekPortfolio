@@ -20,8 +20,10 @@ class Nav extends React.Component {
   }
 
   goToRoute(path) {
-    console.log(history);
     history.push(path);
+    this.setState({
+      menuOpen: false
+    });
   }
 
   render() {
@@ -30,7 +32,7 @@ class Nav extends React.Component {
       <React.Fragment>
         <section className="nav__wrapper">
           <nav className="nav__itemsWrapper">
-            <div className="nav__item" onClick={() => this.goToRoute('/')}>Home</div>
+            <div className="nav__item" onClick={() => this.goToRoute('/home')}>Home</div>
             <div className="nav__item" onClick={() => this.goToRoute('/aboutme')}>About Me</div>
             <div className="nav__item">Resume</div>
             <div className="nav__item">LinkedIn</div>
@@ -48,7 +50,7 @@ class Nav extends React.Component {
               <FontAwesomeIcon className="nav__hamburgerNavIcon" icon={faTimes}  onClick={() => this.toggleMenu(false)} />
             </div>
             <nav className="nav__hamburgerItemsWrapper">
-              <div className="nav__hamburgerItem" onClick={() => this.goToRoute('/')}>Home</div>
+              <div className="nav__hamburgerItem" onClick={() => this.goToRoute('/home')}>Home</div>
               <div className="nav__hamburgerItem" onClick={() => this.goToRoute('/aboutme')}>About Me</div>
               <div className="nav__hamburgerItem">Resume</div>
               <div className="nav__hamburgerItem">LinkedIn</div>

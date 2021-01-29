@@ -6,7 +6,7 @@ html {
   --color-background: white;
   --color-primary: #EDF8FC;
   --color-secondary: #bedcff;
-  --color-accent: #c96f53;
+  --color-accent: #84B5CA;
   --font-family: 'Mukta', sans-serif;
   --gutter: 16px;
   --side-page-padding: 4rem;
@@ -48,6 +48,19 @@ html {
 
   .app__wrapper .home__mobileCaseStudy {
     display: flex;
+  }
+
+  .app__wrapper .home__skillsChart {
+    width: 80%;
+  }
+
+  .app__wrapper .skillsGraph__skillNamesWrapper {
+    width: 20%;
+  }
+
+  .app__wrapper .skillsGraph__skillBarsWrapper {
+    width: 80%;
+    margin-left: 4rem;
   }
 }
 
@@ -257,4 +270,64 @@ h1 {
 .home__skillsGraph {
   width: 70%;
   height: 70%;
+}
+
+.skillsGraph__wrapper {
+  display: flex;
+}
+
+.skillsGraph__skillNamesWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 10%;
+}
+
+.skillsGraph__skillBarsWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 90%;
+  margin-left: 2rem;
+}
+
+.skillsGraph__name {
+  margin: 1rem 0;
+}
+
+.skillsGraph__bar {
+  margin: 1rem;
+  height: 4rem;
+  background: var(--color-accent);
+}
+
+
+.skillsGraph__barXD {
+  width: 65%;
+}
+.skillsGraph__barMiro {
+  width: 55%;
+}
+.skillsGraph__barFigma {
+  width: 45%;
+}
+.skillsGraph__barInvision {
+  width: 40%;
+}
+.skillsGraph__barJavascript {
+  width: 85%;
+}
+.skillsGraph__barHTML {
+  width: 85%;
+}
+.skillsGraph__barCSS {
+  width: 90%;
+}
+.skillsGraph__barReact {
+  width: 80%;
+}
+.skillsGraph__barVue {
+  width: 70%;
 }

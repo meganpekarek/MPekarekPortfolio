@@ -1,7 +1,5 @@
 import '../App.css';
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAddressCard } from '@fortawesome/free-solid-svg-icons'
 
 class CaseStudy extends React.Component {
   constructor(props) {
