@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mukta:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantarell&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 
 html {
@@ -7,7 +9,8 @@ html {
   --color-primary: #EDF8FC;
   --color-secondary: #bedcff;
   --color-accent: #84B5CA;
-  --font-family: 'Mukta', sans-serif;
+  --font-family: 'Cantarell', sans-serif;
+  --font-family-secondary: 'Bebas Neue', cursive;
   --gutter: 16px;
   --side-page-padding: 8rem;
   font-size: 62.5%;
@@ -50,7 +53,7 @@ html {
     display: flex;
   }
 
-  .app__wrapper .home__skillsChart {
+  .app__wrapper .aboutMe__skillsChart {
     width: 80%;
   }
 
@@ -168,8 +171,13 @@ h1 {
   padding: 1em;
 }
 
-.home__wrapper {
-  
+.home__header {
+  font-size: 5rem;
+}
+
+h3 {
+  font-family: var(--font-family-secondary);
+  font-weight: 100;
 }
 
 .home__titleSection {
@@ -260,19 +268,30 @@ h1 {
   padding: 1.5rem;
 }
 
-.home__skillsWrapper {
+.aboutMe__headerSection {
+  background: var(--color-primary);
+  padding: 4rem var(--side-page-padding);
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutMe__infoWrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 5rem 0;
+}
+
+.aboutMe__infoContent {
+  width: 70%;
+}
+
+.aboutMe__skillsWrapper {
   padding: 1em var(--side-page-padding);
 }
 
-.home__skillsChartWrapper {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 5em;
-}
-
-.home__skillsChart {
-  width: 30%;
-  height: 30%;
+.aboutMe__skillsChart {
+  width: 40%;
+  height: 40%;
 }
 
 .home__skillsGraph {
