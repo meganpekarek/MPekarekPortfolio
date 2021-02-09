@@ -4,6 +4,7 @@ import SkillsChart from "../images/SkillsChart.png";
 import SkillsGraph from "../components/SkillsGraph";
 
 class AboutMe extends React.Component {
+
   render() {
     return (
       <React.Fragment>

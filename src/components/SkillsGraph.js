@@ -2,10 +2,39 @@ import '../App.css';
 import React from 'react'
 
 class SkillsGraph extends React.Component {
+  constructor(props) {
+    super(props);
+    this.barGraph = React.createRef();
+    this.state = {
+      animateBar: false
+    };
+  }
+
+  handleScroll = () => {
+    const top = this.barGraph.current.getBoundingClientRect().top;
+    if(top <= 700){
+        console.log("Element is in view or above the viewport");
+        this.setState({
+          animateBar: true
+        })
+    }else{
+        console.log("Element is outside view");
+        this.setState({
+          animateBar: false
+        })
+    }
+  }
+
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll);
+  }
+  componentWillUnmount() {
+    window.removeEventListener('scroll', this.handleScroll);
+  }
 
   render() {
     return (
-        <section className="skillsGraph__wrapper">
+        <section className="skillsGraph__wrapper" ref={this.barGraph}>
             <div className="skillsGraph__skillNamesWrapper">
                 <div className="skillsGraph__name">AdobeXD</div>
                 <div className="skillsGraph__name">Miro</div>
@@ -18,15 +47,15 @@ class SkillsGraph extends React.Component {
                 <div className="skillsGraph__name">Vue</div>
             </div>
             <div className="skillsGraph__skillBarsWrapper">
-                <div className="skillsGraph__bar skillsGraph__barXD"></div>
-                <div className="skillsGraph__bar skillsGraph__barMiro"></div>
-                <div className="skillsGraph__bar skillsGraph__barFigma"></div>
-                <div className="skillsGraph__bar skillsGraph__barInvision"></div>
-                <div className="skillsGraph__bar skillsGraph__barJavascript"></div>
-                <div className="skillsGraph__bar skillsGraph__barHTML"></div>
-                <div className="skillsGraph__bar skillsGraph__barCSS"></div>
-                <div className="skillsGraph__bar skillsGraph__barReact"></div>
-                <div className="skillsGraph__bar skillsGraph__barVue"></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barXD skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barMiro skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barFigma skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barInvision skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barJavascript skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barHTML skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barCSS skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barReact skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
+                <div className={this.state.animateBar ? " skillsGraph__bar skillsGraph__barVue skillsGraph__barAnimate" : "skillsGraph__bar"}></div>
             </div>
         </section>
     );
