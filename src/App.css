@@ -139,7 +139,7 @@ h1 {
 .nav__wrapper {
   display: flex;
   justify-content: space-between;
-  padding: 2em var(--side-page-padding);
+  padding: 1em var(--side-page-padding);
 }
 
 .nav__itemsWrapper {
@@ -172,7 +172,41 @@ h1 {
 }
 
 .home__header {
-  font-size: 5rem;
+  font-size: 6rem;
+  text-align: center;
+}
+
+
+.home__subheaderWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 4rem 0;
+}
+
+.home__subheaderSeparator {
+  border-left: 2px solid #000;
+  height: 40px;
+  margin: 0 4rem;
+}
+
+.home__leftSubheader {
+  animation: collapseLeft 1s ease forwards;
+}
+
+@keyframes collapseLeft {
+  from {transform: translate(-60%);}
+  to {transform: translate(0);}
+}
+
+.home__rightSubheader {
+  animation: collapseRight 1s ease forwards;
+}
+
+@keyframes collapseRight {
+  from {transform: translate(60%);}
+  to {transform: translate(0);}
 }
 
 h3 {
@@ -185,31 +219,15 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .home__headerContent {
   background: var(--color-primary);
-  padding: 1em var(--side-page-padding) 2em var(--side-page-padding);
+  padding: 7em var(--side-page-padding) 7em var(--side-page-padding);
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
-}
-
-.home__infoSection {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 40%;
-}
-
-.home__careerInfo {
-  display: flex;
-  flex-direction: column;
-  margin: 2em 0;
-}
-
-.home__careerDesc {
-  font-size: 1.6rem;
 }
 
 .home__uxWorkWrapper {
@@ -217,7 +235,7 @@ h3 {
 }
 
 .home__uxWorkCaseStudies {
-  margin: 4em 0;
+  margin: 2em 0;
 }
 
 .home__caseStudy {
