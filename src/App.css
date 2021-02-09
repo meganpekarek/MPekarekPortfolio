@@ -53,6 +53,14 @@ html {
     display: flex;
   }
 
+  .app__wrapper .aboutMe__headerSection {
+    flex-direction: column-reverse;
+  }
+
+  .app__wrapper .aboutMe__infoContent {
+    width: 100%;
+  }
+
   .app__wrapper .aboutMe__skillsChart {
     width: 80%;
   }
@@ -300,6 +308,7 @@ h3 {
   padding: 4rem var(--side-page-padding);
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .aboutMe__infoWrapper {

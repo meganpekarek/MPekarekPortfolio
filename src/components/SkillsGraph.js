@@ -13,12 +13,10 @@ class SkillsGraph extends React.Component {
   handleScroll = () => {
     const top = this.barGraph.current.getBoundingClientRect().top;
     if(top <= 700){
-        console.log("Element is in view or above the viewport");
         this.setState({
           animateBar: true
         })
     }else{
-        console.log("Element is outside view");
         this.setState({
           animateBar: false
         })
