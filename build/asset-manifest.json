@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/MPekarekPortfolio/static/css/main.6d69cfab.chunk.css",
-    "main.js": "/MPekarekPortfolio/static/js/main.fb028c5e.chunk.js",
-    "main.js.map": "/MPekarekPortfolio/static/js/main.fb028c5e.chunk.js.map",
+    "main.css": "/MPekarekPortfolio/static/css/main.b52e1ca1.chunk.css",
+    "main.js": "/MPekarekPortfolio/static/js/main.02c40769.chunk.js",
+    "main.js.map": "/MPekarekPortfolio/static/js/main.02c40769.chunk.js.map",
     "runtime-main.js": "/MPekarekPortfolio/static/js/runtime-main.07c56d53.js",
     "runtime-main.js.map": "/MPekarekPortfolio/static/js/runtime-main.07c56d53.js.map",
     "static/js/2.20e832a2.chunk.js": "/MPekarekPortfolio/static/js/2.20e832a2.chunk.js",
@@ -10,7 +10,7 @@
     "static/js/3.90ab326a.chunk.js": "/MPekarekPortfolio/static/js/3.90ab326a.chunk.js",
     "static/js/3.90ab326a.chunk.js.map": "/MPekarekPortfolio/static/js/3.90ab326a.chunk.js.map",
     "index.html": "/MPekarekPortfolio/index.html",
-    "static/css/main.6d69cfab.chunk.css.map": "/MPekarekPortfolio/static/css/main.6d69cfab.chunk.css.map",
+    "static/css/main.b52e1ca1.chunk.css.map": "/MPekarekPortfolio/static/css/main.b52e1ca1.chunk.css.map",
     "static/js/2.20e832a2.chunk.js.LICENSE.txt": "/MPekarekPortfolio/static/js/2.20e832a2.chunk.js.LICENSE.txt",
     "static/media/CGCaseStudy.48d98a6b.png": "/MPekarekPortfolio/static/media/CGCaseStudy.48d98a6b.png",
     "static/media/CGCoverPhoto.4247ff05.png": "/MPekarekPortfolio/static/media/CGCoverPhoto.4247ff05.png",
@@ -25,7 +25,7 @@
   "entrypoints": [
     "static/js/runtime-main.07c56d53.js",
     "static/js/2.20e832a2.chunk.js",
-    "static/css/main.6d69cfab.chunk.css",
-    "static/js/main.fb028c5e.chunk.js"
+    "static/css/main.b52e1ca1.chunk.css",
+    "static/js/main.02c40769.chunk.js"
   ]
 }

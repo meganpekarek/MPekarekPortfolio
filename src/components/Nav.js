@@ -37,7 +37,7 @@ class Nav extends React.Component {
             <div className={`nav__item ${this.state.activeRoute === "/home" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/home')}>Home</div>
             <div className={`nav__item ${this.state.activeRoute === "/aboutme" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/aboutme')}>About Me</div>
             <div className={`nav__item ${this.state.activeRoute === "/resume" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/resume')}>Resume</div>
-            <div className="nav__item">LinkedIn</div>
+            <div className="nav__item"><a className="nav__linkedInLink" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/megan-pekarek-928813111/">LinkedIn</a></div>
           </nav>
           <div className="nav__logoWrapper">
             <img className="nav__mpLogo" src={MPLogo} alt="desktop-logo" />
