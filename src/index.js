@@ -4,6 +4,7 @@ import './index.css';
 import Home from './views/Home'
 import AboutMe from './views/AboutMe'
 import CaseStudyPage from './views/CaseStudyPage'
+import Resume from './views/Resume'
 import Nav from './components/Nav'
 import Footer from './components/Footer'
 import { Route, Switch, Router } from 'react-router-dom'
@@ -19,6 +20,7 @@ const routing = (
         <Route path="/home" component={Home} />
         <Route path="/aboutme" component={AboutMe} />
         <Route path="/case-study-page" component={CaseStudyPage} />
+        <Route path="/resume" component={Resume} />
       </Switch>
       <Footer />
     </div>

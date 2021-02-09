@@ -36,7 +36,7 @@ class Nav extends React.Component {
           <nav className="nav__itemsWrapper">
             <div className={`nav__item ${this.state.activeRoute === "/home" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/home')}>Home</div>
             <div className={`nav__item ${this.state.activeRoute === "/aboutme" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/aboutme')}>About Me</div>
-            <div className="nav__item">Resume</div>
+            <div className={`nav__item ${this.state.activeRoute === "/resume" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/resume')}>Resume</div>
             <div className="nav__item">LinkedIn</div>
           </nav>
           <div className="nav__logoWrapper">
