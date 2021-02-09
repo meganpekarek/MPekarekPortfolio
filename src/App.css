@@ -278,6 +278,7 @@ h3 {
   justify-content: center;
   width: 100%;
   align-items: center;
+  text-align: center;
 }
 
 .home__mobileCaseStudy {
@@ -397,4 +398,14 @@ h3 {
 }
 .skillsGraph__barVue {
   width: 70%;
+}
+
+.caseStudyPage__wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.caseStudyPage__img {
+  width: 80%;
 }
