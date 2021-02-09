@@ -33,10 +33,6 @@ html {
     display: flex;
   }
 
-  .app__wrapper .home__headerContent {
-    flex-direction: column;
-  }
-
   .app__wrapper .home__titleSection {
     width: 100%;
   }
@@ -241,10 +237,10 @@ h3 {
 
 .home__headerContent {
   background: var(--color-primary);
-  padding: 7em var(--side-page-padding) 7em var(--side-page-padding);
+  padding: 3em var(--side-page-padding);
+  height: 40vh;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
 }
 
 .home__uxWorkWrapper {
