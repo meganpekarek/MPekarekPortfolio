@@ -9,7 +9,8 @@ class Nav extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      menuOpen: false
+      menuOpen: false,
+      activeRoute: '/home'
     }
   }
 
@@ -22,7 +23,8 @@ class Nav extends React.Component {
   goToRoute(path) {
     history.push(path);
     this.setState({
-      menuOpen: false
+      menuOpen: false,
+      activeRoute: path
     });
   }
 
@@ -32,8 +34,8 @@ class Nav extends React.Component {
       <React.Fragment>
         <section className="nav__wrapper">
           <nav className="nav__itemsWrapper">
-            <div className="nav__item" onClick={() => this.goToRoute('/home')}>Home</div>
-            <div className="nav__item" onClick={() => this.goToRoute('/aboutme')}>About Me</div>
+            <div className={`nav__item ${this.state.activeRoute === "/home" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/home')}>Home</div>
+            <div className={`nav__item ${this.state.activeRoute === "/aboutme" ? "nav__activeItem" : ""}`} onClick={() => this.goToRoute('/aboutme')}>About Me</div>
             <div className="nav__item">Resume</div>
             <div className="nav__item">LinkedIn</div>
           </nav>
