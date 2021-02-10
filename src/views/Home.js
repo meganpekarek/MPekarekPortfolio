@@ -1,7 +1,7 @@
 import "../App.css";
 import React from "react";
 import NSACoverPhoto from "../images/NSACoverPhoto.png";
-import SheCanicCoverPhoto from "../images/SheCanicCoverPhoto.png";
+import SheCanicCoverPhoto from "../images/GreySheCanicCoverPhoto.png";
 import CGCoverPhoto from "../images/CGCoverPhoto.png";
 import CaseStudy from "../components/CaseStudy";
 import CGCaseStudy from '../images/CGCaseStudy.png'
