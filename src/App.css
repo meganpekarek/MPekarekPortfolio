@@ -298,8 +298,7 @@ h3 {
 }
 
 .home__mobileCaseStudyPhoto {
-  width: 250px;
-  height: 300px;
+  width: 100%;
 }
 
 .home__mobileCaseStudyDesc {
@@ -410,7 +409,8 @@ h3 {
 .caseStudyPage__wrapper {
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .caseStudyPage__img {

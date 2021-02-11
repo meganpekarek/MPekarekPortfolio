@@ -31,7 +31,7 @@ class CaseStudy extends React.Component {
         </div>
         <div className="home__mobileCaseStudy">
           <img
-            className="home_mobileCaseStudyPhoto"
+            className="home__mobileCaseStudyPhoto"
             src={this.props.coverPhoto}
             alt="case-study-cover"
           />
