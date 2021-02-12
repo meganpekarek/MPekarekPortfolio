@@ -4,12 +4,16 @@ import history from "../history";
 
 class CaseStudy extends React.Component {
   goToRoute = (path) => {
-    history.push({
+    if(this.props.caseStudyImg.includes('CGCaseStudy')) {
+      window.location.href = "https://meganpekarek.github.io/CommonGroundCaseStudy/";
+    } else {
+      history.push({
         pathname: path,
         state: {
           caseStudyImg: this.props.caseStudyImg
         }
       });
+    }
   };
 
   render() {
